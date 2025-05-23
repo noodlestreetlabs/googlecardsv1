@@ -430,7 +430,7 @@ func (s *Button) MarshalJSON() ([]byte, error) {
 // (https://developers.google.com/workspace/extend):
 type ButtonList struct {
      	// Unclear if this works
-     	HorizontalAlignment string `json:"horizontalAlignment"`
+     	HorizontalAlignment string `json:"horizontalAlignment,omitempty"`
 
 
 	// Buttons: An array of buttons.
